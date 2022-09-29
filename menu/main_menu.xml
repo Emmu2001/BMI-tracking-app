@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
+        <item
+            android:id="@+id/nav_targets"
+            android:title="Targets"
+            android:icon="@drawable/target_icon"/>
+        <item
+            android:id="@+id/nav_workout"
+            android:title="Workouts"
+            android:icon="@drawable/workout_icon"/>
+        <item
+            android:id="@+id/nav_diets"
+            android:title="Diets"
+            android:icon="@drawable/diet_icon"/>
+        <item
+            android:id="@+id/nav_music"
+            android:title="Music"
+            android:icon="@drawable/music_icon"/>
+    </group>
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"
+                    android:icon="@drawable/login_icon"/>
+                <item
+                    android:id="@+id/profile"
+                    android:title="Profile"
+                    android:icon="@drawable/profile_icon"/>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/logout_icon"/>
+            </group>
+        </menu>
+
+    </item>
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/share_icon"/>
+            <item
+                android:id="@+id/rateus"
+                android:title="Rate Us"
+                android:icon="@drawable/rateus_icon"/>
+        </menu>
+
+    </item>
+
+
+</menu>

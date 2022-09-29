@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffeecc"
+    tools:context=".BMI">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/bangers"
+        android:text="Enter the following details:"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Weight (kg)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edit_bg"
+        android:ems="6"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Height (m)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edit_bg"
+        android:ems="6"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="6"
+        android:inputType="number"
+        android:background="@drawable/edit_bg"
+        android:textColorHint="@color/black"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="How Active are you?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="0dp"
+        android:text="Little or no activity(mostly sitting through the day)"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="0dp"
+        android:text="Lightly active(mostly standing through the day)"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="0dp"
+        android:text="Moderately active(mostly walking or doing physical activity)"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <CheckBox
+        android:id="@+id/cbNone"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="0dp"
+        android:text="Very active(heavy physical activity)"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textAlignment="gravity"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="221dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:onClick="CalculateBMI"
+        android:text="Calculate BMI"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/Calculatebutton"
+        android:layout_width="77dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#7b6079"
+        android:onClick="CalculateBMI"
+        android:text="Next"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+</LinearLayout>
